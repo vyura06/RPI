@@ -846,27 +846,23 @@ body {
    padding-left: 80px;
 }
 
-.phone,
-.mail,
+.fa-phone a,
+.fa-envelope a,
+.fa-phone::before,
+.fa-envelope::before,
 .address {
    transition: color 0.3s ease-in-out;
    font-family: inherit;
    font-style: inherit;
 }
 
-.phone::before {
-   content: "\f095";
+.fa-phone::before,
+.fa-envelope::before {
    margin-right: 10px;
 }
 
-.mail::before {
-   content: "\f0e0";
-   margin-right: 10px;
-}
-
-.phone:hover,
-.mail:hover,
+.fa-phone:hover,
+.fa-envelope:hover,
 .address:hover {
    color: #fff;
 }
-
