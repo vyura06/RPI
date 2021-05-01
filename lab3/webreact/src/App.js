@@ -2,12 +2,12 @@ import React from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navibar from './components/Navibar'
+import Footer from './components/Footer'
 
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 import {Home} from './Home';
@@ -20,11 +20,12 @@ function App() {
     <Router>
     <Navibar/>
       <Switch>
-        <Route exect path="/" component={Home}/>
+        <Route exact path="/" component={Home}/>
         <Route path="/users" component={Users}/>
         <Route path="/about" component={About}/>
       </Switch>
     </Router>
+    <Footer/>
     </>
   );
 }
