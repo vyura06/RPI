@@ -19,11 +19,11 @@ function App() {
     <>
     <Router>
     <Navibar/>
-      <Switch>
-        <Route exact path="/" component={Home}/>
-        <Route path="/users" component={Users}/>
-        <Route path="/about" component={About}/>
-      </Switch>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route path="/users" component={Users}/>
+          <Route path="/about" component={About}/>
+        </Switch>
     </Router>
     <Footer/>
     </>
