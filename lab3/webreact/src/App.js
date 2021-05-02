@@ -17,15 +17,17 @@ import {About} from './About';
 function App() {
   return (
     <>
-    <Router>
-    <Navibar/>
-        <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/users" component={Users}/>
-          <Route path="/about" component={About}/>
-        </Switch>
-    </Router>
-    <Footer/>
+      <div className="background">
+        <Router>
+        <Navibar/>
+            <Switch>
+              <Route exact path="/" component={Home}/>
+              <Route path="/users" component={Users}/>
+              <Route path="/about" component={About}/>
+            </Switch>
+        </Router>
+        <div className="footer"><Footer/></div>
+      </div>  
     </>
   );
 }

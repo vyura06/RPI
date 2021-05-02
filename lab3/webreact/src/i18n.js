@@ -14,9 +14,9 @@ i18n
     resources: {
       en: {
         translation: {
-          part1: 'WebDev Blog',
+          part1: 'Blog',
           part2: 'Home',
-          part3: 'Users',
+          part3: 'Filmmakers',
           part4: 'About',
           part5: 'Log In',
           part6: 'Sign Out',
@@ -31,7 +31,7 @@ i18n
             description: {
                 part1: 'Блог',
                 part2: 'Главная',
-                part3: 'Пользователи',
+                part3: 'Режиссёры',
                 part4: 'О нас',
                 part5: 'Авторизоваться',
                 part6: 'Войти',
