@@ -1,4 +1,5 @@
-body{
+
+.body{
   height: 1000px;
 }
 
@@ -22,4 +23,8 @@ body{
   100%{
     background-position: 0 50%;
   }
+}
+
+.search{
+  align-content: center;
 }

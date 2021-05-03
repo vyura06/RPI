@@ -1,8 +1,5 @@
 import React from 'react';
-import Jumbotron from './components/Jumbotron'
 
 export const About = () => (
-    <>
-    <Jumbotron/>
-    </>
+    <h1>O</h1>
 )

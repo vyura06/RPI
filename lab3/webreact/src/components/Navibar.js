@@ -40,13 +40,13 @@ export default function Navibar() {
                     ))}
                 </div>
                 <Container>
-                <Navbar.Brand><Trans i18nKey="description.part1">Blog</Trans></Navbar.Brand>
+                <Navbar.Brand><Trans i18nKey="description.part1">Belarusian filmmakers</Trans></Navbar.Brand>
                 <Navbar.Toggle aria controls="responsive-navbar-nav"/>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
                         <Nav.Link><Link to="/"><Trans i18nKey="description.part2">Home</Trans></Link></Nav.Link>
                         <Nav.Link><Link to="/users"><Trans i18nKey="description.part3">Filmmakers</Trans></Link></Nav.Link>
-                        <Nav.Link><Link to="/about"><Trans i18nKey="description.part4">About</Trans></Link></Nav.Link>
+                        <Nav.Link><Link to="/about"><Trans i18nKey="description.part4">More details</Trans></Link></Nav.Link>
                     </Nav>
                     <Nav>
                         <Button variants="primary" className="mr-2" onClick={handleShow}><Trans i18nKey="description.part5">Log In</Trans></Button>
