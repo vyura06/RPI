@@ -4,7 +4,7 @@ import {Container} from 'react-bootstrap';
 const Footer = () => (
         <Container fluid style={{backgroundColor: '#343a40', color: '#adb1b8'}}>
             <Container style={{display: 'flex', justifyContent: 'center', padding: '8px'}}>
-                <p>Web Developer Blog</p>
+                <p>Filmmakers of Belarus</p>
             </Container>
         </Container>
 )
