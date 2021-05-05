@@ -7,10 +7,13 @@ export const Users = () => (
 
     <Container>
         <Row>
-            <Container fluid style={{ marginTop: "1rem", fontFamily: "Orelega One" }}>
+            <Container fluid style={{ marginTop: "1rem", fontFamily: "Orelega One", marginBottom:"3rem" }}>
                 <Row>
-                    <Col><h1>Filmmakers of Belarus</h1></Col>
-                    <Col><Search></Search></Col>
+                    <div class="col-sm">
+                        <h1>Filmmakers of Belarus</h1>
+                        <Search></Search>
+                    </div>
+                    
                 </Row>
             </Container>
             <Table striped bordered hover size="lg" style={{ marginTop: "1rem", fontFamily: "Orelega One" }}>
