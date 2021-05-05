@@ -8,9 +8,9 @@ export const Users = () => (
     <Container>
         <Row>
             
-                <Col><h1 style={{marginTop:"1rem"}}>Filmmakers of Belarus</h1></Col>
-                <Col md={3} style={{marginTop:"0.4rem"}}><Search></Search></Col>
-                <Table striped bordered hover size="lg" style={{marginTop:"1rem"}}>
+                <Col><h1 style={{marginTop:"1rem", fontFamily:"Orelega One"}}>Filmmakers of Belarus</h1></Col>
+                <Col md={3} style={{marginTop:"0.4rem", fontFamily:"Orelega One"}}><Search></Search></Col>
+                <Table striped bordered hover size="lg" style={{marginTop:"1rem", fontFamily:"Orelega One"}}>
                     <thead>
                         <tr>
                             <th>#</th>
