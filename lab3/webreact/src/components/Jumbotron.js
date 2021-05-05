@@ -29,7 +29,6 @@ const Jumbotron = () => (
             <div className="overlay"></div>
             <Container>
                 <h1>Filmmakers of Belarus</h1>
-                <div>It's not scary to die. It's scary that after death they can make a film and Pattinson will play you.</div>
             </Container>
         </Jumbo>
     </Styles>

@@ -2,51 +2,61 @@
     {
         "first_name": "Yuri",
         "last_name": "Azaryonok",
-        "year_of_birth": "27/02/1965"
+        "year_of_birth": "27/02/1965",
+        "link": "/about"
     },
     {
         "first_name": "Sergey",
         "last_name": "Arlanov",
-        "year_of_birth": "05/02/1973"
+        "year_of_birth": "05/02/1973",
+        "link": "/about"
     },
     {
         "first_name": "Oleg",
         "last_name": "Belousov",
-        "year_of_birth": "16/11/1945"
+        "year_of_birth": "16/11/1945",
+        "link": "/about"
     },
     {
         "first_name": "Vladimir",
         "last_name": "Bychkov",
-        "year_of_birth": "05/01/1929"
+        "year_of_birth": "05/01/1929",
+        "link": "/about"
     },
     {
         "first_name": "Joseph",
         "last_name": "Veinerovich",
-        "year_of_birth": "24/12/1909"
+        "year_of_birth": "24/12/1909",
+        "link": "/about"
     },
     {
         "first_name": "Igor",
         "last_name": "Volchek",
-        "year_of_birth": "18/05/1946"
+        "year_of_birth": "18/05/1946",
+        "link": "/about"
     },
     {
         "first_name": "Stanislav",
         "last_name": "Haiduk",
-        "year_of_birth": "10/01/1945"
+        "year_of_birth": "10/01/1945",
+        "link": "/about"
     },
     {
         "first_name": "Victor",
         "last_name": "Dashuk",
-        "year_of_birth": "16/09/1938"
+        "year_of_birth": "16/09/1938",
+        "link": "/about"
     },
     {
         "first_name": "Sergey",
         "last_name": "Arlanov",
-        "year_of_birth": "05/02/1973"
+        "year_of_birth": "05/02/1973",
+        "link": "/about"
     },
     {
         "first_name": "Yuri",
         "last_name": "Elkhov",
-        "year_of_birth": "07/12/1940"
+        "year_of_birth": "07/12/1940",
+        "link": "/about"
     }
 ]

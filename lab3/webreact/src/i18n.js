@@ -14,31 +14,19 @@ i18n
     resources: {
       en: {
         translation: {
-          part1: 'Blog',
+          part1: 'Filmmakers of Belarus',
           part2: 'Home',
           part3: 'Filmmakers',
-          part4: 'About',
-          part5: 'Log In',
-          part6: 'Sign Out',
-          part7: 'Log In',
-          part8: 'Email Adress',
-          part9: 'We will never share your email width anyone else.',
-          part10: 'Password'
+          part4: 'More details',
         }
       },
       ru: {
         translation: {
             description: {
-                part1: 'Блог',
+                part1: 'Режиссёры Беларуси',
                 part2: 'Главная',
                 part3: 'Режиссёры',
-                part4: 'О нас',
-                part5: 'Авторизоваться',
-                part6: 'Войти',
-                part7: 'Вход',
-                part8: 'Email-адрес',
-                part9: 'Мы никогда и никому не передадим вашу электронную почту',
-                part10: 'Пароль'
+                part4: 'Дополнительно',
             }
         }
     }

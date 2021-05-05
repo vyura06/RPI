@@ -20,15 +20,15 @@ function App() {
     <>
       <div className="background">
         <Router>
-        <Navibar/>
-            <Switch>
-              <Route exact path="/" component={Home}/>
-              <Route path="/users" component={Users}/>
-              <Route path="/about" component={About}/>
-            </Switch>
+          <Navibar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/users" component={Users} />
+            <Route path="/about" component={About} />
+          </Switch>
         </Router>
-        <div className="footer"><Footer/></div>
-      </div>  
+        <div className="footer"><Footer /></div>
+      </div>
     </>
   );
 }

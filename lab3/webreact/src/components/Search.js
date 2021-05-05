@@ -1,6 +1,7 @@
 import React from 'react';
 import JSONDATA from './MOCK_DATA.json';
-import { useState } from 'react';
+import { useState} from 'react';
+import {Link} from 'react-router-dom';
 import './Search.css';
 
 function Search() {
@@ -19,7 +20,7 @@ function Search() {
                 }).map((val, key) => {
                     return (
                         <div className="user" key={key}>
-                            <p style={{ color: "black" }}>{val.first_name} {val.last_name}</p>
+                            <a><Link to={val.link}>{val.first_name} {val.last_name}</Link></a>
                         </div>
                     );
                 })

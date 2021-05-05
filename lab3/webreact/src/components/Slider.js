@@ -5,7 +5,7 @@ import ocean from '../ocean.jpg';
 export default function Navibar() {
     return(
        <Carousel>
-           <Carousel.Item style={{'height':'600px'}}>
+           <Carousel.Item style={{'height':'500px'}}>
                <img
                 className="d-block w-100"
                 src={ocean}
@@ -17,7 +17,7 @@ export default function Navibar() {
             </Carousel.Caption>
            </Carousel.Item>
            
-           <Carousel.Item style={{'height':'600px'}}>
+           <Carousel.Item style={{'height':'500px'}}>
                <img
                 className="d-block w-100"
                 src={ocean}
@@ -29,7 +29,7 @@ export default function Navibar() {
             </Carousel.Caption>
            </Carousel.Item>
 
-           <Carousel.Item style={{'height':'600px'}}>
+           <Carousel.Item style={{'height':'500px'}}>
                <img
                 className="d-block w-100"
                 src={ocean}

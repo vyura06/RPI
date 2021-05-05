@@ -35,15 +35,17 @@ export default function Navibar() {
                     ))}
                 </div>
                 <Container>
-                <Navbar.Brand style={{fontSize:'1.5rem', fontFamily:"Orelega One"}}><Trans i18nKey="description.part1" >Filmmakers of Belarus</Trans></Navbar.Brand>
-                <Navbar.Toggle aria controls="responsive-navbar-nav"/>
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto" style={{fontSize:'1.2rem', fontFamily:"Orelega One"}}>
-                        <Nav.Link><Link to="/"><Trans i18nKey="description.part2">Home</Trans></Link></Nav.Link>
-                        <Nav.Link><Link to="/users"><Trans i18nKey="description.part3">Filmmakers</Trans></Link></Nav.Link>
-                        <Nav.Link><Link to="/about"><Trans i18nKey="description.part4">More details</Trans></Link></Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
+                    <Navbar.Brand href="/" style={{fontSize:'1.5rem', fontFamily:"Orelega One"}}>
+                        <Trans i18nKey="description.part1" >Filmmakers of Belarus</Trans>
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="mr-auto">
+                            <Nav.Link><Link to="/" style={{fontSize:'1.3rem', fontFamily:"Orelega One"}}><Trans i18nKey="description.part2">Home</Trans></Link></Nav.Link>
+                            <Nav.Link><Link to="/users" style={{fontSize:'1.3rem', fontFamily:"Orelega One"}}><Trans i18nKey="description.part3">Filmmakers</Trans></Link></Nav.Link>
+                            <Nav.Link><Link to="/about" style={{fontSize:'1.3rem', fontFamily:"Orelega One"}}><Trans i18nKey="description.part4">More details</Trans></Link></Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </Styles>
