@@ -1,14 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
+import './i18n';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import WebFont from 'webfontloader';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+render(
+  <BrowserRouter>
+      <App />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

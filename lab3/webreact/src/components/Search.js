@@ -8,7 +8,7 @@ function Search() {
     const [searchTerm, setSearchTerm] = useState('')
     return (
         <div className="search">
-            <input type="text" placeholder="Search..." onChange={event => {
+            <input type="text" placeholder="🔍" onChange={event => {
                 setSearchTerm(event.target.value);
             }} />
             {

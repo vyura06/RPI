@@ -1,11 +1,11 @@
 import React from 'react';
-import {Navbar, Nav, Container} from 'react-bootstrap';
-import {Link} from 'react-router-dom';
+import { Navbar, Nav} from 'react-bootstrap';
 import styled from 'styled-components';
-import '../i18n';
-import { useTranslation, Trans} from 'react-i18next';
+import i18n from '../i18n';
 
-const Styles = styled.div `
+import { useTranslation } from 'react-i18next'
+
+const Styles = styled.div`
     a, .navbar-brand, .navbar-nav .nav-link {
         color: #adb1b8;
         &: hover{
@@ -14,42 +14,37 @@ const Styles = styled.div `
     }
 `
 
-const lngs = {
-    en: {nativeName: 'En'},
-    ru: {nativeName: 'Ru'}
-};
+function Navibar() {
 
-export default function Navibar() {
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    }
 
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
-    return(
-        <>
-        <Styles>
-            <Navbar collapseOnSelect expend="lg" bg='dark' variant='dark'>
-                <div>
-                    {Object.keys(lngs).map((lng) => (
-                        <button key={lng} style={{ borderRadius: "10px", backgroundColor: "#007bff", boxShadow: "2px 3px", opacity: "0.9",fontWeight: i18n.language === lng ? 'bold' : 'normal', fontFamily:"Orelega One"}} type="submit" onClick={() => i18n.changeLanguage(lng)}>
-                            {lngs[lng].nativeName}
-                        </button>
-                    ))}
-                </div>
-                <Container>
-                    <Navbar.Brand href="/" style={{fontSize:'1.5rem', fontFamily:"Orelega One"}}>
-                        <Trans i18nKey="description.part1" >Filmmakers of Belarus</Trans>
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+    return (
+        <>  
+            <Styles>
+                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                    <Navbar.Brand href="/">{t("home.logo")}</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
-                            <Nav.Link><Link to="/" style={{fontSize:'1.3rem', fontFamily:"Orelega One"}}><Trans i18nKey="description.part2">Home</Trans></Link></Nav.Link>
-                            <Nav.Link><Link to="/users" style={{fontSize:'1.3rem', fontFamily:"Orelega One"}}><Trans i18nKey="description.part3">Filmmakers</Trans></Link></Nav.Link>
-                            <Nav.Link><Link to="/about" style={{fontSize:'1.3rem', fontFamily:"Orelega One"}}><Trans i18nKey="description.part4">More details</Trans></Link></Nav.Link>
+                            <Nav.Link href="/">{t("home.home")}</Nav.Link>
+                            <Nav.Link href="/users">{t("home.film")}</Nav.Link>
+                            <Nav.Link href="/about">{t("home.about")}</Nav.Link>
+                        </Nav>
+                        <Nav>
+                            <Nav.Link >
+                                <div onClick={() => changeLanguage('en')}>{t("home.lng-en")}</div>
+                            </Nav.Link>
+                            <Nav.Link onClick={() => changeLanguage('ru')}>{t("home.lng-ru")}</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </Styles>
+                </Navbar>
+            </Styles>    
         </>
-
     );
 }
+
+export default Navibar

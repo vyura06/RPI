@@ -1,36 +1,22 @@
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import i18n from 'i18next'
+import Backend from 'i18next-xhr-backend'
 import LanguageDetector from 'i18next-browser-languagedetector';
 
+import { initReactI18next } from 'react-i18next'
+
 i18n
+  .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    debug: true,
+    lng: 'en',
+    detection: {order:['queryString', 'cookie']},
     fallbackLng: 'en',
+    debug: true,
     interpolation: {
       escapeValue: false,
-    },
-    resources: {
-      en: {
-        translation: {
-          part1: 'Filmmakers of Belarus',
-          part2: 'Home',
-          part3: 'Filmmakers',
-          part4: 'More details',
-        }
-      },
-      ru: {
-        translation: {
-            description: {
-                part1: 'Режиссёры Беларуси',
-                part2: 'Главная',
-                part3: 'Режиссёры',
-                part4: 'Дополнительно',
-            }
-        }
+      formatSeparator: ','
     }
-    }
-  });
+  })
 
-export default i18n;
+export default i18n

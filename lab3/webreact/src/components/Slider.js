@@ -1,6 +1,6 @@
 import { Carousel } from 'react-bootstrap';
 import React from 'react';
-import ocean from '../ocean.jpg';
+import fotoap from '../img/Fotoap.jpg';
 
 export default function Navibar() {
     return(
@@ -8,7 +8,7 @@ export default function Navibar() {
            <Carousel.Item style={{'height':'500px'}}>
                <img
                 className="d-block w-100"
-                src={ocean}
+                src={fotoap}
                 alt="First slide"
                />
             <Carousel.Caption>
@@ -20,7 +20,7 @@ export default function Navibar() {
            <Carousel.Item style={{'height':'500px'}}>
                <img
                 className="d-block w-100"
-                src={ocean}
+                src={fotoap}
                 alt="First slide"
                />
             <Carousel.Caption>
@@ -32,7 +32,7 @@ export default function Navibar() {
            <Carousel.Item style={{'height':'500px'}}>
                <img
                 className="d-block w-100"
-                src={ocean}
+                src={fotoap}
                 alt="First slide"
                />
             <Carousel.Caption>
