@@ -7,6 +7,7 @@ import belousov from './img/Belousov.jpg';
 export const About = () => (
     <>
         <Row>
+
             <Col>
                 <Card style={{ width: '16rem', border: "1rem", marginBottom: "1rem", backgroundColor: "transparent" }}>
                     <Container>
@@ -143,5 +144,6 @@ export const About = () => (
             </Col>
             
         </Row>
+
     </>
 )

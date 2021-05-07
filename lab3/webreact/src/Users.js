@@ -9,8 +9,8 @@ export default function Users(){
     const { t } = useTranslation();
 
     return(
-        <>
-            <Container>
+        <>  
+             <Container>
                 <Row>
                     <Container fluid style={{ marginTop: "1rem", fontFamily: "Orelega One", marginBottom:"3rem" }}>
                         <Row>
@@ -18,7 +18,6 @@ export default function Users(){
                                 <h1>{t("home.logo")}</h1>
                                 <Search></Search>
                             </div>
-                            
                         </Row>
                     </Container>
                     <Table striped bordered hover size="lg" style={{ marginTop: "1rem", fontFamily: "Orelega One" }}>
@@ -35,10 +34,10 @@ export default function Users(){
                                 JSONDATA.map((val, index) => {
                                     return (
                                         <tr>
-                                            <th>{index + 1}</th>
-                                            <th>{val.first_name}</th>
-                                            <th>{val.last_name}</th>
-                                            <th>{val.year_of_birth}</th>
+                                            <th><a href={val.link}>{index + 1}</a></th>
+                                            <th><a href={val.link}>{val.first_name}</a></th>
+                                            <th><a href={val.link}>{val.last_name}</a></th>
+                                            <th><a href={val.link}>{val.year_of_birth}</a></th>
                                         </tr>
                                     );
                                 })
@@ -46,7 +45,8 @@ export default function Users(){
                         </tbody>
                     </Table>
                 </Row>
-            </Container >
+            </Container>
+
         </>
     )
 }
