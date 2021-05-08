@@ -4,8 +4,8 @@ import fotoap from '../img/Fotoap.jpg';
 
 export default function Navibar() {
     return(
-       <Carousel>
-           <Carousel.Item style={{'height':'500px'}}>
+       <Carousel style={{height:"40rem", width:"100%"}}>
+           <Carousel.Item>
                <img
                 className="d-block w-100"
                 src={fotoap}
@@ -17,7 +17,7 @@ export default function Navibar() {
             </Carousel.Caption>
            </Carousel.Item>
            
-           <Carousel.Item style={{'height':'500px'}}>
+           <Carousel.Item>
                <img
                 className="d-block w-100"
                 src={fotoap}
@@ -29,7 +29,7 @@ export default function Navibar() {
             </Carousel.Caption>
            </Carousel.Item>
 
-           <Carousel.Item style={{'height':'500px'}}>
+           <Carousel.Item>
                <img
                 className="d-block w-100"
                 src={fotoap}
