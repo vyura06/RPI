@@ -29,7 +29,7 @@ function UsersID() {
                 }}>
                 
                 <Button href="/users" variant="dark" style={{ 
-                margin: "0 0 0 0",
+                margin: "0.2rem 0 0.2rem",
                 float: "right",
                 fontFamily: "Orelega One"
                 }}>BACK
