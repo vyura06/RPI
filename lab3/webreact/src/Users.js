@@ -20,30 +20,34 @@ export default function Users(){
                             </div>
                         </Row>
                     </Container>
-                    <Table striped bordered hover size="lg" style={{ marginTop: "1rem", fontFamily: "Orelega One" }}>
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>{t("users.first")}</th>
-                                <th>{t("users.last")}</th>
-                                <th>{t("users.year")}</th>
-                            </tr>
-                        </thead>
-                        <tbody style={{ backgroundColor: "lightblue", opacity: "0.6", color: "black", fontWeight: "400" }}>
-                            {
-                                JSONDATA.map((val, index) => {
-                                    return (
-                                        <tr>
-                                            <th><a href={val.link}>{index + 1}</a></th>
-                                            <th><a href={val.link}>{val.first_name}</a></th>
-                                            <th><a href={val.link}>{val.last_name}</a></th>
-                                            <th><a href={val.link}>{val.year_of_birth}</a></th>
-                                        </tr>
-                                    );
-                                })
-                            }
-                        </tbody>
-                    </Table>
+                    <Container fluid>
+                        <div class="col-sm" style={{justifyContent:"center", display:"flex"}}>
+                            <Table striped bordered hover size="lg" style={{ marginTop: "1rem", fontFamily: "Orelega One"}}>
+                                <thead>
+                                    <tr>
+                                        <th style={{padding:"8px"}}>#</th>
+                                        <th style={{padding:"8px"}}>{t("users.first")}</th>
+                                        <th style={{padding:"8px"}}>{t("users.last")}</th>
+                                        <th style={{padding:"8px"}}>{t("users.year")}</th>
+                                    </tr>
+                                </thead>
+                                <tbody style={{ backgroundColor: "lightblue", opacity: "0.6", color: "black", fontWeight: "400" }}>
+                                    {
+                                        JSONDATA.map((val, index) => {
+                                            return (
+                                                <tr sty>
+                                                    <th style={{padding:"8px"}}><a href={val.link} style={{margin:"8px"}}>{index + 1}</a></th>
+                                                    <th style={{padding:"8px"}}><a href={val.link} style={{margin:"8px"}}>{val.first_name}</a></th>
+                                                    <th style={{padding:"8px"}}><a href={val.link} style={{margin:"8px"}}>{val.last_name}</a></th>
+                                                    <th style={{padding:"8px"}}><a href={val.link} style={{margin:"8px"}}>{val.year_of_birth}</a></th>
+                                                </tr>
+                                            );
+                                        })
+                                    }
+                                </tbody>
+                            </Table>
+                        </div>
+                    </Container>
                 </Row>
             </Container>
 

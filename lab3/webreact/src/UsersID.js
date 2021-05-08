@@ -161,7 +161,7 @@ function UsersID() {
                                 justifyContent: "center",
                                 display: "flex",
                             }}>
-                                <Image src={user.photo} width="400" height="515" style={{border: "0.2rem solid rgba(52, 58, 64, 1)",
+                                <Image src={user.photo} width="350" height="500" style={{border: "0.2rem solid rgba(52, 58, 64, 1)",
                                 padding: "0.2rem"}}></Image>
                                                     
                             </div>
